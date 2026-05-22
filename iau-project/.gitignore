@@ -1,0 +1,45 @@
+# ── Node ──────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Environment variables (NEVER commit these) ────────────────
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ── React build output ────────────────────────────────────────
+/iau-portal/build/
+
+# ── Uploaded evidence files ───────────────────────────────────
+/iau-portal-backend/uploads/
+
+# ── Log files ─────────────────────────────────────────────────
+/iau-portal-backend/logs/
+*.log
+
+# ── OS files ──────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── VS Code ───────────────────────────────────────────────────
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ── IDE ───────────────────────────────────────────────────────
+.idea/
+*.iml
+
+# ── Misc ──────────────────────────────────────────────────────
+*.zip
+*.tar.gz
