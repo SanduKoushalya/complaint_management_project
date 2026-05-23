@@ -1,6 +1,3 @@
-CREATE DATABASE IF NOT EXISTS iau_portal CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE iau_portal;
-
 CREATE TABLE IF NOT EXISTS complaints (
   id                    INT UNSIGNED NOT NULL AUTO_INCREMENT,
   crn                   VARCHAR(20)  NOT NULL UNIQUE,
