@@ -374,12 +374,7 @@ tbody tr:hover td{background:var(--navy-50);}
 }
 
 /* ── Background image ── */
-.lp-bg {
-  position: absolute; inset: 0;
-  /* Use a relative path to the public folder so webpack can resolve it from the src file. */
-  background: url('%PUBLIC_URL%/landing-bg.png') center center / cover no-repeat;
-  z-index: 0;
-}
+
 
 /* ── Dark overlay so text stays readable ── */
 .lp-overlay {
