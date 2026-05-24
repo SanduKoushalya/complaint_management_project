@@ -67,21 +67,22 @@ export default function LandingPage({ onNavigate }) {
 
   return (
     <div className="lp-root">
-      {/* ── Full-page background image (use PUBLIC_URL to load from /public) ── */}
       <div
         className="lp-bg"
         style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/landing-bg.png)` }}
       />
-      {/* ── Dark overlay for text readability ── */}
       <div className="lp-overlay" />
 
       <div className="lp-content">
 
-        {/* ══ TOP HEADER BAR ══════════════════════════════════ */}
         <div className="lp-topbar">
           <div className="lp-topbar-left">
             <div className="lp-logo-pill">
-              <img src="/sltmobitel-logo.png" alt="SLTMobitel" className="lp-logo" />
+              <img
+                src={`${process.env.PUBLIC_URL}/sltmobitel-logo.png`}
+                alt="SLTMobitel"
+                className="lp-logo"
+              />
             </div>
             <div className="lp-topbar-divider" />
             <div>
@@ -89,37 +90,27 @@ export default function LandingPage({ onNavigate }) {
               <div className="lp-topbar-unit">Internal Affairs Unit (IAU)</div>
             </div>
           </div>
-          {/* right side intentionally left blank (remove Portal Active / Circular) */}
           <div className="lp-topbar-right" />
         </div>
 
-        {/* ══ HERO SECTION ════════════════════════════════════ */}
         <div className="lp-hero">
           <div className="lp-hero-left">
-
             <div className="lp-hero-tag">
               <span className="lp-hero-tag-dot" />
               Secure · Confidential · Encrypted
             </div>
-
             <h1 className="lp-hero-title">
               Complaint &amp;<br />
               Concern Reporting<br />
               <span className="lp-hero-title-green">Portal</span>
             </h1>
-
             <p className="lp-hero-desc">
-              A trusted platform for all SLTMobitel stakeholders to report concerns of bribery,corruption,
-              fraud,and malpractice.All submissions are processed under strict confidentiality.
-              
+              A trusted platform for all SLTMobitel stakeholders to report concerns of bribery, corruption,
+              fraud, and malpractice. All submissions are processed under strict confidentiality.
             </p>
-
-            {/* hero stats removed per design: 100% confidential / 24/7 / AES-256 */}
-
           </div>
         </div>
 
-        {/* ══ THREE CARDS ═════════════════════════════════════ */}
         <div className="lp-cards">
           {cards.map(card => (
             <div
@@ -134,27 +125,16 @@ export default function LandingPage({ onNavigate }) {
               onMouseEnter={() => setHovered(card.id)}
               onMouseLeave={() => setHovered(null)}
             >
-              {/* Top accent line */}
               <div className="lp-card-topline" />
-
-              {/* Label + Icon row */}
               <div className="lp-card-header">
                 <span className="lp-card-label">{card.label}</span>
                 <div className="lp-card-icon">{card.icon}</div>
               </div>
-
-              {/* Title */}
               <div className="lp-card-title">{card.title}</div>
-
-              {/* Description */}
               <div className="lp-card-desc">{card.desc}</div>
-
-              {/* Tag */}
               <div className="lp-card-tag" style={{ color: card.tagColor, borderColor: card.tagColor }}>
                 {card.tag}
               </div>
-
-              {/* Action row */}
               <div className="lp-card-footer">
                 <span className="lp-card-action">{card.action}</span>
                 <div className="lp-card-btn">
@@ -163,14 +143,11 @@ export default function LandingPage({ onNavigate }) {
                   </svg>
                 </div>
               </div>
-
-              {/* Corner glow effect */}
               <div className="lp-card-glow-corner" />
             </div>
           ))}
         </div>
 
-        {/* ══ BOTTOM FOOTER ═══════════════════════════════════ */}
         <div className="lp-footer">
           <div className="lp-footer-left" />
           <div className="lp-footer-right" />
