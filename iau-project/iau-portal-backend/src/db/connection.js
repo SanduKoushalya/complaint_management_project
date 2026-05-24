@@ -5,7 +5,7 @@ let pool = null;
 
 function getPool() {
   if (!pool) {
-    pool = mysql.createPool({
+    const config = {
       host:     process.env.DB_HOST     || 'localhost',
       port:     parseInt(process.env.DB_PORT || '3306'),
       database: process.env.DB_NAME     || 'iau_portal',
@@ -14,7 +14,13 @@ function getPool() {
       waitForConnections: true,
       connectionLimit: 10,
       timezone: '+00:00',
-    });
+    };
+
+    if (process.env.DB_SSL === 'true') {
+      config.ssl = { rejectUnauthorized: false };
+    }
+
+    pool = mysql.createPool(config);
   }
   return pool;
 }
