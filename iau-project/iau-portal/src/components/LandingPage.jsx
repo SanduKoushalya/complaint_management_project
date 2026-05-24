@@ -69,7 +69,7 @@ export default function LandingPage({ onNavigate }) {
     <div className="lp-root">
       <div
         className="lp-bg"
-        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/landing-bg.png)` }}
+        style={{ backgroundImage: "url('/landing-bg.png')" }}
       />
       <div className="lp-overlay" />
 
