@@ -374,7 +374,15 @@ tbody tr:hover td{background:var(--navy-50);}
 }
 
 /* ── Background image ── */
-
+.lp-bg {
+  position: absolute; inset: 0;
+  background-color: #0a1637;
+  background-image: url('/landing-bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
 
 /* ── Dark overlay so text stays readable ── */
 .lp-overlay {
