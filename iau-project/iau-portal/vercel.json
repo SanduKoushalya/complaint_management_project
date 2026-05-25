@@ -1,7 +1,8 @@
 {
-  "rewrites": [
-    { "source": "/(.*)\\.png", "destination": "/$1.png" },
-    { "source": "/(.*)\\.ico", "destination": "/$1.ico" },
-    { "source": "/(.*)", "destination": "/index.html" }
+  "routes": [
+    { "src": "/landing-bg.png", "dest": "/landing-bg.png" },
+    { "src": "/sltmobitel-logo.png", "dest": "/sltmobitel-logo.png" },
+    { "src": "/favicon.ico", "dest": "/favicon.ico" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
