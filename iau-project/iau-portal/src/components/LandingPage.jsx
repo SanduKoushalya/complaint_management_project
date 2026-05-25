@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import landingBg from '../../public/landing-bg.png';
+
 
 export default function LandingPage({ onNavigate }) {
   const [hovered, setHovered] = useState(null);
@@ -70,11 +70,12 @@ export default function LandingPage({ onNavigate }) {
     <div className="lp-root">
       <div
         className="lp-bg"
-        style={{ backgroundImage: `url(${landingBg})` }}
+        style={{ backgroundImage: "url('/landing-bg.png')" }}
       />
       <div className="lp-overlay" />
 
       <div className="lp-content">
+
         <div className="lp-topbar">
           <div className="lp-topbar-left">
             <div className="lp-logo-pill">
@@ -152,6 +153,7 @@ export default function LandingPage({ onNavigate }) {
           <div className="lp-footer-left" />
           <div className="lp-footer-right" />
         </div>
+
       </div>
     </div>
   );
