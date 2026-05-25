@@ -1,5 +1,7 @@
 {
   "rewrites": [
+    { "source": "/(.*)\\.png", "destination": "/$1.png" },
+    { "source": "/(.*)\\.ico", "destination": "/$1.ico" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
