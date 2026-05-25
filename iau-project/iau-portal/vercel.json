@@ -1,8 +1,5 @@
 {
-  "routes": [
-    { "src": "/landing-bg.png", "dest": "/landing-bg.png" },
-    { "src": "/sltmobitel-logo.png", "dest": "/sltmobitel-logo.png" },
-    { "src": "/favicon.ico", "dest": "/favicon.ico" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
