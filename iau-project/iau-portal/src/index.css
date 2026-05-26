@@ -380,9 +380,9 @@ tbody tr:hover td{background:var(--navy-50);}
   position: absolute; inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(27,63,143,0.90) 0%,
-    rgba(27,63,143,0.78) 50%,
-    rgba(27,63,143,0.65) 100%
+    rgba(10,26,60,0.82) 0%,
+    rgba(10,26,60,0.70) 50%,
+    rgba(10,26,60,0.60) 100%
   );
   z-index: 1;
 }
@@ -422,7 +422,7 @@ tbody tr:hover td{background:var(--navy-50);}
 .lp-topbar {
   display: flex; align-items: center; justify-content: space-between;
   padding: 16px 48px;
-  background: rgba(27,63,143,0.92);
+  background: rgba(10,22,55,0.55);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
